@@ -5,6 +5,7 @@ import Services from "@/components/Services"
 import WhyChooseUs from "@/components/WhyChooseUs"
 import Process from "@/components/Process"
 import Consultation from "@/components/Consultation"
+import Blog from "@/components/Blog"
 import FAQ from "@/components/FAQ"
 import Footer from "@/components/Footer"
 
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyChooseUs />
       <Process />
       <Consultation />
+      <Blog />
       <FAQ />
       <Footer />
     </main>
