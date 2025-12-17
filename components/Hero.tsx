@@ -16,12 +16,12 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:30px_30px] sm:bg-[size:40px_40px] lg:bg-[size:60px_60px] opacity-50"></div>
       
       {/* Subtle radial gradient overlay */}
-      <div className="absolute inset-0 bg-radial-gradient from-amber-600/5 via-transparent to-transparent"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(217,119,6,0.05)_0%,_transparent_70%)]"></div>
 
       {/* Elegant decorative lines with animation */}
-      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-px h-32 sm:h-48 lg:h-64 bg-gradient-to-b from-transparent via-amber-600/40 to-transparent hidden lg:block animate-pulse"></div>
+      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-px h-32 sm:h-48 lg:h-64 bg-gradient-to-b from-transparent via-amber-600/40 to-transparent hidden lg:block"></div>
       
-      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-32 sm:h-48 lg:h-64 bg-gradient-to-b from-transparent via-amber-600/40 to-transparent hidden lg:block animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-32 sm:h-48 lg:h-64 bg-gradient-to-b from-transparent via-amber-600/40 to-transparent hidden lg:block"></div>
       
       {/* Top decorative accent */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 sm:w-32 lg:w-40 h-px bg-gradient-to-r from-transparent via-amber-600/30 to-transparent"></div>
