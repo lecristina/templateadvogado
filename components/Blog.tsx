@@ -2,26 +2,10 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
-
-const blogPosts = [
-  {
-    date: "29 de Janeiro, 2023",
-    title: "Mudanças Recentes nas Regulamentações do Direito Empresarial",
-    category: "Direito Empresarial",
-  },
-  {
-    date: "26 de Janeiro, 2023",
-    title: "Entendendo os Requisitos de Transações Imobiliárias",
-    category: "Direito Imobiliário",
-  },
-  {
-    date: "22 de Janeiro, 2023",
-    title: "Tendências e Desenvolvimentos da Indústria Jurídica",
-    category: "Notícias do Setor",
-  },
-]
+import { siteConfig } from "@/config/site.config"
 
 export default function Blog() {
+  const { blog } = siteConfig
   return (
     <section className="min-h-screen flex items-center bg-gradient-to-b from-white via-slate-50/30 to-white relative overflow-hidden py-10 xs:py-12 sm:py-16 md:py-18 lg:py-20">
       {/* Sophisticated decorative elements */}
@@ -34,11 +18,11 @@ export default function Blog() {
             <div className="flex items-center gap-2 xs:gap-3 sm:gap-4 mb-3 xs:mb-4">
               <div className="w-10 xs:w-12 sm:w-16 h-px bg-gradient-to-r from-amber-600 to-transparent"></div>
               <p className="text-[9px] xs:text-[10px] sm:text-xs text-slate-500 uppercase tracking-[0.2em] xs:tracking-[0.25em] sm:tracking-[0.3em] font-light">
-                Insights Jurídicos
+                {blog.badge}
               </p>
             </div>
             <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-light text-slate-900 leading-tight tracking-tight">
-              Últimas Atualizações
+              {blog.title}
             </h2>
             <div className="w-14 xs:w-18 sm:w-20 md:w-24 h-px bg-gradient-to-r from-amber-600 to-transparent mt-3 xs:mt-4"></div>
           </div>
@@ -48,14 +32,14 @@ export default function Blog() {
           >
             <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
             <span className="relative z-10 flex items-center">
-              Ver Tudo
+              {blog.button.label}
               <ArrowRight className="ml-2 xs:ml-3 w-3.5 xs:w-4 h-3.5 xs:h-4 group-hover:translate-x-1 transition-transform duration-500" />
             </span>
           </Button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-5 sm:gap-6 max-w-7xl mx-auto">
-          {blogPosts.map((post, index) => (
+          {blog.posts.map((post, index) => (
             <div
               key={index}
               className="bg-white/80 backdrop-blur-sm border border-slate-200/60 rounded-none p-4 xs:p-5 sm:p-6 hover:shadow-xl hover:shadow-amber-600/10 hover:border-amber-600/60 hover:bg-white hover:-translate-y-1 transition-all duration-700 group relative overflow-hidden"

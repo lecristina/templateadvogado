@@ -189,6 +189,31 @@ export const siteConfig = {
       icon: "Calendar",
     },
   },
+  blog: {
+    badge: "Insights Jurídicos",
+    title: "Últimas Atualizações",
+    button: {
+      label: "Ver Tudo",
+      href: "#blog",
+    },
+    posts: [
+      {
+        date: "29 de Janeiro, 2024",
+        title: "Mudanças Recentes nas Regulamentações do Direito Empresarial",
+        category: "Direito Empresarial",
+      },
+      {
+        date: "26 de Janeiro, 2024",
+        title: "Entendendo os Requisitos de Transações Imobiliárias",
+        category: "Direito Imobiliário",
+      },
+      {
+        date: "22 de Janeiro, 2024",
+        title: "Tendências e Desenvolvimentos da Indústria Jurídica",
+        category: "Notícias do Setor",
+      },
+    ],
+  },
   faq: {
     badge: "Perguntas Frequentes",
     title: "Perguntas Comuns",
