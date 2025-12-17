@@ -56,7 +56,7 @@ export default function Testimonials() {
               className="bg-slate-800/50 border border-slate-700/50 rounded-none p-4 xs:p-5 sm:p-6 hover:border-amber-600/30 transition-all duration-500 group"
             >
               <div className="mb-4 xs:mb-5 sm:mb-6">
-                <div className="text-amber-500 text-3xl xs:text-4xl font-serif font-light mb-3 xs:mb-4 leading-none">"</div>
+                <div className="text-amber-500 text-3xl xs:text-4xl font-serif font-light mb-3 xs:mb-4 leading-none">&ldquo;</div>
                 <p className="text-slate-300 leading-relaxed text-xs xs:text-sm font-light">
                   {testimonial.quote}
                 </p>
