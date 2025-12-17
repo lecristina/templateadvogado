@@ -77,21 +77,6 @@ export default function Hero() {
                 </Button>
               ))}
             </div>
-
-            {/* Premium Stats with sophisticated design */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-6 pt-4 sm:pt-5 md:pt-6 lg:pt-6 border-t border-slate-800/50 relative">
-              <div className="absolute top-0 left-0 w-12 h-px bg-gradient-to-r from-amber-600/50 to-transparent"></div>
-              {hero.stats.map((stat, i) => (
-                <div key={i} className="text-left group cursor-default">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-serif font-light bg-gradient-to-br from-amber-500 via-amber-400 to-amber-600 bg-clip-text text-transparent mb-1 sm:mb-2 tracking-tight transition-all duration-500 group-hover:scale-105">
-                    {stat.number}
-                  </div>
-                  <div className="text-[9px] xs:text-[10px] sm:text-xs text-slate-400 uppercase tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] font-light leading-tight group-hover:text-slate-300 transition-colors duration-300">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Right Side - Main Photo */}
